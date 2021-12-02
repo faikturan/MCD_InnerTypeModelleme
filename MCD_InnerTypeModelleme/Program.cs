@@ -50,7 +50,12 @@ namespace MCD_InnerTypeModelleme
                 fiyat = 2500
             };
 
-          
+
+            foreach (Urun item in M1.musteriSiparisBilgileri[0].urunler)
+            {
+                Console.WriteLine("id: " + item.urunId + " " + "tanim:" + item.Tanim + " " + "fiyat: " + item.fiyat);
+            }
+
             Console.ReadKey();
 
 
